@@ -23,6 +23,9 @@ class Compunent extends StatelessWidget {
           margin: EdgeInsets.all(5),
           child: Image.asset('images/Hero Section - Mobile.jpg'),
         ),
+
+
+
       ],
     );
   }
