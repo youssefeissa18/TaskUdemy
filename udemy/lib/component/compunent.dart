@@ -11,6 +11,8 @@ class Compunent extends StatelessWidget {
       scrollDirection: Axis.vertical,
       child: Column(
         children: [
+
+
           Container(
             color: Colors.deepPurpleAccent,
             width: 400,
