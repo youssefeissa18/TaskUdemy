@@ -117,11 +117,57 @@ class Compunent extends StatelessWidget {
             ),
           ),
           
-          Row(
-            children: [
-              Courses(),
-            ],
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                Courses(
+                  AssetImage("images/d1.jpeg"),
+                  "Design Course",
+                  "Trainee Course",
+                  "4.8",
+                  Icon(Icons.star),
+                  " (417)",
+                  "EGP 387",
+                ),
+                Courses(
+                  AssetImage("images/d2.jpeg"),
+                  "Design Course",
+                  "Trainee Course",
+                  "4.8",
+                  Icon(Icons.star),
+                  " (817)",
+                  "EGP 287",
+                ),
+                Courses(
+                  AssetImage("images/d3.jpeg"),
+                  "Design Course",
+                  "Trainee Course",
+                  "4.9",
+                  Icon(Icons.star),
+                  " (217)",
+                  "EGP 762",
+                ),
+
+              ],
+            ),
           ),
+
+
+          Container(
+            alignment: Alignment.centerLeft,
+            margin: EdgeInsets.only(top: 30,left: 25,bottom: 20),
+            child: Text(
+              "Top Courses in Development",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+          
 
         ],
       ),

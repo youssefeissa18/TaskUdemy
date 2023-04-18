@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 class Courses extends StatelessWidget {
-  Image imagecourse;
+  AssetImage imagecourse;
   String namecourse;
   String ifom;
+  String rate;
   Icon Iconstar;
+  String view;
   String Price;
 
-
-  Courses(
-      this.imagecourse, this.namecourse, this.ifom, this.Iconstar, this.Price);
+  Courses(this.imagecourse, this.namecourse, this.ifom, this.rate,
+      this.Iconstar, this.view, this.Price);
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +21,14 @@ class Courses extends StatelessWidget {
 
           Container(
             child: Image.asset(
-                "images/d1.jpeg",
-                scale: 2),
+                imagecourse.assetName,
+                scale: 2,
+            ),
           ),
 
           Container(
             child: Text(
-              "Design Course",
+              namecourse,
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 20,
@@ -37,7 +39,7 @@ class Courses extends StatelessWidget {
 
           Container(
             child: Text(
-              "Trainee course",
+              ifom,
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 12,
@@ -51,7 +53,7 @@ class Courses extends StatelessWidget {
               Container(
                 margin: EdgeInsets.only(right: 3,top: 5),
                 child: Text(
-                  "4.8",
+                  rate,
                   style: TextStyle(
                     color: Colors.yellow[900],
                   ),
@@ -59,15 +61,15 @@ class Courses extends StatelessWidget {
               ),
               Row(
                 children: [
-                  Icon(Icons.star,color: Colors.yellow[700],),
-                  Icon(Icons.star,color: Colors.yellow[700],),
-                  Icon(Icons.star,color: Colors.yellow[700],),
-                  Icon(Icons.star,color: Colors.yellow[700],),
+                  Icon(Iconstar.icon,color: Colors.yellow[700],),
+                  Icon(Iconstar.icon,color: Colors.yellow[700],),
+                  Icon(Iconstar.icon,color: Colors.yellow[700],),
+                  Icon(Iconstar.icon,color: Colors.yellow[700],),
                 ],
               ),
               Container(
                 child: Text(
-                  " (417)",
+                  view,
                   style: TextStyle(
                     color: Colors.white,
                   ),
@@ -78,7 +80,7 @@ class Courses extends StatelessWidget {
 
           Container(
             child: Text(
-              "EGP 387",
+              Price,
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,
