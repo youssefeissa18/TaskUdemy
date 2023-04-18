@@ -77,7 +77,37 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
 
-      
+      bottomNavigationBar: NavigationBar(
+        backgroundColor: Colors.deepPurpleAccent,
+        height: 60,
+        destinations: [
+          NavigationDestination(
+              icon: Icon(Icons.star,color: Colors.white),
+              label: "Featured"
+          ),
+
+          NavigationDestination(
+              icon: Icon(Icons.search,color: Colors.white),
+              label: "Search"
+          ),
+
+          NavigationDestination(
+              icon: Icon(Icons.ondemand_video_sharp,color: Colors.white),
+              label: "Mylearning"
+          ),
+
+          NavigationDestination(
+              icon: Icon(Icons.monitor_heart,color: Colors.white),
+              label: "Wishlist"),
+
+          NavigationDestination(
+              icon: Icon(Icons.account_circle,color: Colors.white),
+              label: "Account"
+          ),
+        ],
+      ),
+
+
       body: Compunent(),
     );
   }
