@@ -8,7 +8,7 @@ class Compunent extends StatelessWidget {
     return Column(
       children: [
         Container(
-
+          child: Image.asset('name'),
         ),
       ],
     );
