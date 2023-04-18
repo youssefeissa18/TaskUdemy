@@ -5,6 +5,12 @@ class Compunent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        Container(
+          child: Image.asset(""),
+        )
+      ],
+    );
   }
 }
