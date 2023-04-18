@@ -29,7 +29,50 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
+        backgroundColor: Colors.white38,
+        width: 180,
+        child: Container(
+          child: Column(
+            children: [
+              Container(
+                alignment: Alignment.centerLeft,
+                margin: EdgeInsets.only(top: 80,left: 10),
+                child: CircleAvatar(
+                  radius: 50,
+                  backgroundImage: NetworkImage("https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"),
+                ),
+              ),
 
+              Text(
+                "Name\nYoussef Abdelghfar",
+                style: TextStyle(
+                fontSize: 20,
+                height: 2,
+              ),),
+
+              Container(
+                margin: EdgeInsets.only(top: 460),
+                child: Row(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 2,top: 15),
+                        child: Icon(Icons.settings)
+                    ),
+                    Container(
+                      child: Text(
+                        "Settings",
+                        style: TextStyle(
+                        fontSize: 20,
+                        height: 2.5,
+                      ),),
+                    ),
+                  ],
+                ),
+              ),
+
+            ],
+          ),
+        ),
       ),
 
 
