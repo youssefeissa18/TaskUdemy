@@ -8,7 +8,8 @@ class Compunent extends StatelessWidget {
     return Column(
       children: [
         Container(
-          child: Image.asset('name'),
+          margin: EdgeInsets.all(10),
+          child: Image.asset('images/Hero Section - Mobile.jpg'),
         ),
       ],
     );

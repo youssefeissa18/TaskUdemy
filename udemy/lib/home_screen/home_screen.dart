@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udemy/component/compunent.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -77,7 +78,9 @@ class HomeScreen extends StatelessWidget {
 
 
 
-      body: Container(),
+      body: Compunent(
+
+      ),
     );
   }
 }
