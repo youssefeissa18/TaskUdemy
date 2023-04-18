@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:udemy/jobs/job.dart';
 
 class Compunent extends StatelessWidget {
   const Compunent({Key? key}) : super(key: key);
@@ -49,28 +50,55 @@ class Compunent extends StatelessWidget {
           ),
         ),
 
-
         Row(
           children: [
             Container(
-              margin: EdgeInsets.only(left: 20,bottom: 10,right: 10,top: 20),
-              height: 40,
-              width: 150,
-              decoration: BoxDecoration(
-                border: Border.all(width: 2,color: Colors.white),
-                borderRadius: BorderRadius.circular(20)
+              margin: EdgeInsets.only(left: 20,right: 120),
+              child: Text(
+                "Categories",
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  height: 1.5
+                ),
               ),
-              child: Center(
-                child: Text(
-                  "Development",
-                  style: TextStyle(
-                    color: Colors.white
-                  ),
+            ),
+            Container(
+              child: Text(
+                  "see all",
+                style: TextStyle(
+                  color: Colors.deepPurple,
                 ),
               ),
             ),
           ],
-        )
+        ),
+
+
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              Jobs("Development"),
+              Jobs("IT & Software"),
+              Jobs("Office Work"),
+              Jobs("Another Job"),
+            ],
+          ),
+        ),
+
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              Jobs("Business"),
+              Jobs("Finance & Accounting"),
+              Jobs("Programmer"),
+              Jobs("Analysis"),
+            ],
+          ),
+        ),
       ],
     );
   }
