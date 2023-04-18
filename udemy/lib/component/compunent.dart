@@ -176,7 +176,7 @@ class Compunent extends StatelessWidget {
                   AssetImage("images/course1.jpg"),
                   "Python Basic",
                   "Basic Course",
-                  "4.8",
+                  "4.6",
                   Icon(Icons.star),
                   " (117)",
                   "EGP 487",
@@ -185,7 +185,7 @@ class Compunent extends StatelessWidget {
                   AssetImage("images/course2.jpg"),
                   "Python Course",
                   "Advanced Course",
-                  "4.8",
+                  "5.0",
                   Icon(Icons.star),
                   " (917)",
                   "EGP 687",
@@ -205,7 +205,77 @@ class Compunent extends StatelessWidget {
           ),
 
 
+          Container(
+            margin: EdgeInsets.only(top: 20,left: 10,right: 10,bottom: 10),
+            width: 400,
+            height: 200,
+            decoration: BoxDecoration(
+              border: Border.all(width: 1,color: Colors.grey),
+            ),
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 15,bottom: 5),
+                  child: Text(
+                    textAlign: TextAlign.center,
+                    "Top Compaines trust Udemy",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30,
+                    ),
+                  ),
+                ),
 
+                Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 5,left: 70,right: 15,bottom: 5),
+                      child: Text(
+                          "box",
+                        style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15),
+                      child: Text(
+                        "Nasdap",
+                        style: TextStyle(
+                            color: Colors.grey[700],
+                            fontSize: 30,
+                            fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ),
+
+                    Text(
+                      "WW",
+                      style: TextStyle(
+                          color: Colors.grey[700],
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  ],
+                ),
+
+                Text(
+                  "Try Udemy Business",
+                  style: TextStyle(
+                    height: 2,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.deepPurple[100],
+                  ),
+                ),
+              ],
+            ),
+          ),
 
 
         ],
