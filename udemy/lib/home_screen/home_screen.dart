@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
-        backgroundColor: Colors.white38,
+        backgroundColor: Colors.white,
         width: 180,
         child: Container(
           child: Column(
